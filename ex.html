@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>banner_ex</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+
+
+    <style>
+                * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            margin: 20px;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        i {
+            margin: 0 2px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #banner {
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            width: 700px;
+            height: 250px;
+            border: 1px solid #ccc;
+        }
+
+        .ch {
+            position: absolute;
+            left: 50%;
+            top: 10px;
+            transform: translateX(-50%);
+            transition: all 0.5s;
+        }
+
+        #banner:hover .ch {
+            left: 500px;
+        }
+
+        .tistory {
+            position: absolute;
+            left: 15px;
+            top: -130px;
+            transition: all 0.5s 0.2s;
+        }
+
+        #banner:hover .tistory {
+            top: 5px;
+            left: 115px;
+        }
+
+        .txt {
+            display: block;
+            position: absolute;
+            left: 20px;
+            top: 120px;
+            font-size: 20px;
+            font-weight: bold;
+            opacity: 0;
+            transform: scale(2,2);
+            transition: all 0.25s linear 0.2s;
+        }
+
+        #banner:hover .txt {
+            opacity: 1;
+            transform: scale(1,1);
+        }
+
+        .txt2 {
+            display: block;
+            position: absolute;
+            left: -300px;
+            bottom: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #555;
+            transition: all 0.5s 0.3s;
+        }
+
+        #banner:hover .txt2 {
+            left: 90px;
+        }
+
+
+
+        #banner:hover .logo {
+            bottom: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <a href="#" >
+        <div id="banner">
+            <img class="ch" src="https://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile22.uf.tistory.com%2Fimage%2F99A1874A5BE118690BAFF8">
+            <img src="./" alt="">
+            <img class="tistory" src="./main_logo_2.png">
+            <p class="txt">신상품은 계속해서 추가 입고 예정입니다.</p>
+            <p class="txt2">Comming Soon!</p>
+            <!-- <p class="logo"><i class="fab fa-chrome"></i><i class="fab fa-internet-explorer"></i><i class="fab fa-firefox"></i><i class="fab fa-opera"></i><i class="fab fa-safari"></i></p> -->
+            <!-- <p class="device"><i class="fas fa-desktop"></i><i class="fas fa-mobile-alt"></i></p> -->
+        </div>
+    </a>
+</body>
+</html>
